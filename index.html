@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Telegram Kanal</title>
 
 <style>
@@ -9,22 +10,12 @@ body{
 margin:0;
 background:linear-gradient(135deg,#1e3c72,#2a5298);
 height:100vh;
-font-family:Arial;
+font-family:Arial, sans-serif;
 color:white;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-overflow:hidden;
-}
-
-.container{
-padding:30px;
-}
-
-h1{
-font-size:26px;
-margin-bottom:20px;
 }
 
 /* Qizil yonib turadigan strelka */
@@ -32,32 +23,34 @@ margin-bottom:20px;
 position:fixed;
 top:20px;
 right:20px;
-font-size:60px;
+font-size:80px;
 color:red;
 animation:blink 1s infinite, move 1s infinite alternate;
 }
 
-/* miltillash */
 @keyframes blink{
 0%{opacity:1;}
-50%{opacity:0.3;}
+50%{opacity:0.4;}
 100%{opacity:1;}
 }
 
-/* kichik tebranish */
 @keyframes move{
 from{transform:translateY(0);}
-to{transform:translateY(10px);}
+to{transform:translateY(8px);}
 }
 
+/* Katta oq blok */
 .box{
 background:white;
 color:black;
-padding:20px;
-border-radius:15px;
+padding:35px 30px;
+border-radius:20px;
 font-weight:bold;
+font-size:32px;
+line-height:1.5;
+max-width:90%;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
-
 </style>
 </head>
 
@@ -65,13 +58,11 @@ font-weight:bold;
 
 <div class="arrow">⬆️</div>
 
-<div class="container">
 <div class="box">
-DIQQAT!<br><br>
+⚠️ DIQQAT!<br><br>
 Telegram kanalga qo‘shilish uchun<br>
-Yuqoridagi 3 nuqtani bosing<br>
-So‘ng <b>"Open in browser"</b> ni tanlang
-</div>
+Yuqoridagi <span style="color:red;">3 nuqtani</span> bosing<br><br>
+So‘ng <span style="color:red;">"Open in browser"</span> ni tanlang
 </div>
 
 </body>
