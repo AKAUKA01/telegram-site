@@ -14,45 +14,59 @@ display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-overflow:hidden;
+flex-direction:column;
 }
 
-/* Katta qizil strelka */
+/* KATTA QIZIL STRELKA */
 .arrow{
 position:fixed;
 top:10px;
 right:15px;
-font-size:140px;
+font-size:160px;
 color:red;
 animation:pulse 0.8s infinite;
 }
 
-/* miltillash */
 @keyframes pulse{
 0%{opacity:1; transform:scale(1);}
-50%{opacity:0.5; transform:scale(1.1);}
+50%{opacity:0.5; transform:scale(1.15);}
 100%{opacity:1; transform:scale(1);}
 }
 
-/* Oq yozuv bloklari */
+/* ULTRA KATTA YOZUV BLOKLAR */
 .block{
 background:white;
 color:black;
-display:inline-block;
-padding:15px 25px;
-margin:8px;
-border-radius:20px;
+padding:20px 30px;
+margin:12px;
+border-radius:25px;
 font-weight:900;
-font-size:28px;
-line-height:1.3;
-}
-
-.small{
-font-size:24px;
+font-size:36px;
+line-height:1.4;
+max-width:95%;
 }
 
 .red{
 color:red;
+}
+
+/* TELEGRAM TUGMA */
+.btn{
+margin-top:30px;
+padding:25px 50px;
+font-size:32px;
+background:#229ED9;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+animation:btnpulse 1.2s infinite;
+}
+
+@keyframes btnpulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.1);}
+100%{transform:scale(1);}
 }
 </style>
 </head>
@@ -61,16 +75,18 @@ color:red;
 
 <div class="arrow">⬆️</div>
 
-<div>
-<div class="block small">⚠️ DIQQAT</div><br>
-<div class="block">Telegram kanalga qo‘shilish uchun</div><br>
-<div class="block">Strelka ko‘rsatayotgan</div><br>
-<div class="block red">3 NUQTANI</div><br>
-<div class="block">bosing</div><br>
-<div class="block">So‘ng</div><br>
-<div class="block red">"OPEN IN BROWSER"</div><br>
+<div class="block">⚠️ DIQQAT</div>
+<div class="block">Telegram kanalga qo‘shilish uchun</div>
+<div class="block">Strelka ko‘rsatayotgan</div>
+<div class="block red">3 NUQTANI</div>
+<div class="block">bosing</div>
+<div class="block">So‘ng</div>
+<div class="block red">"OPEN IN BROWSER"</div>
 <div class="block">ni bosing</div>
-</div>
+
+<a class="btn" href="https://t.me/aka_uka_oyin1">
+🚀 TELEGRAM KANALGA O‘TISH
+</a>
 
 </body>
 </html>
