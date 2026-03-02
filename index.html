@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="uz">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Telegram Kanal</title>
 
 <style>
 body{
 margin:0;
-background:#1f4f7a;
-height:100vh;
-font-family:Arial, sans-serif;
+background:linear-gradient(135deg,#1f3c88,#2c5aa0);
 display:flex;
 justify-content:center;
 align-items:center;
+height:100vh;
+font-family:Arial;
 text-align:center;
-flex-direction:column;
 }
 
-/* KATTA QIZIL STRELKA */
+/* QIZIL STRELKA */
 .arrow{
-position:fixed;
-top:10px;
-right:15px;
-font-size:160px;
+position:absolute;
+top:80px;
+right:40px;
+font-size:120px;
 color:red;
-animation:pulse 0.8s infinite;
+animation:blink 1s infinite;
 }
 
-@keyframes pulse{
+@keyframes blink{
 0%{opacity:1; transform:scale(1);}
-50%{opacity:0.5; transform:scale(1.15);}
+50%{opacity:0.4; transform:scale(1.2);}
 100%{opacity:1; transform:scale(1);}
 }
 
-/* ULTRA KATTA YOZUV BLOKLAR */
+/* ULTRA KATTA BLOKLAR */
 .block{
 background:white;
 color:black;
-padding:20px 30px;
-margin:12px;
-border-radius:25px;
+padding:25px 40px;
+margin:18px;
+border-radius:30px;
 font-weight:900;
-font-size:36px;
+font-size:44px;
 line-height:1.4;
 max-width:95%;
 }
@@ -52,14 +52,15 @@ color:red;
 
 /* TELEGRAM TUGMA */
 .btn{
-margin-top:30px;
-padding:25px 50px;
-font-size:32px;
+margin-top:40px;
+padding:30px 60px;
+font-size:40px;
 background:#229ED9;
 color:white;
 text-decoration:none;
-border-radius:30px;
+border-radius:40px;
 font-weight:bold;
+display:inline-block;
 animation:btnpulse 1.2s infinite;
 }
 
@@ -73,20 +74,43 @@ animation:btnpulse 1.2s infinite;
 
 <body>
 
-<div class="arrow">⬆️</div>
+<div class="arrow">➤</div>
 
-<div class="block">⚠️ DIQQAT</div>
-<div class="block">Telegram kanalga qo‘shilish uchun</div>
-<div class="block">Strelka ko‘rsatayotgan</div>
-<div class="block red">3 NUQTANI</div>
-<div class="block">bosing</div>
-<div class="block">So‘ng</div>
-<div class="block red">"OPEN IN BROWSER"</div>
-<div class="block">ni bosing</div>
+<div>
+<div class="block">⚠ ДИҚҚАТ</div>
+
+<div class="block">
+Telegram каналга қўшилиш учун
+</div>
+
+<div class="block">
+Стрелка кўрсатаётган
+</div>
+
+<div class="block red">
+3 НУҚТАНИ
+</div>
+
+<div class="block">
+босинг
+</div>
+
+<div class="block">
+Сўнг
+</div>
+
+<div class="block red">
+"ОТКРЫТЬ В БРАУЗЕРЕ"
+</div>
+
+<div class="block">
+ни босинг!
+</div>
 
 <a class="btn" href="https://t.me/aka_uka_oyin1">
-🚀 TELEGRAM KANALGA O‘TISH
+🚀 TELEGRAM КАНАЛГА ЎТИШ
 </a>
+</div>
 
 </body>
 </html>
