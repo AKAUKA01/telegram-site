@@ -7,60 +7,71 @@
 <style>
 body{
 margin:0;
+background:linear-gradient(135deg,#1e3c72,#2a5298);
 height:100vh;
+font-family:Arial;
+color:white;
 display:flex;
 justify-content:center;
 align-items:center;
-background: linear-gradient(135deg, #229ED9, #0f172a);
-color:white;
-font-family:Arial;
 text-align:center;
+overflow:hidden;
 }
 
-.box{
+.container{
 padding:30px;
-max-width:400px;
 }
 
 h1{
-font-size:22px;
-margin-bottom:15px;
+font-size:26px;
+margin-bottom:20px;
 }
 
+/* Qizil yonib turadigan strelka */
 .arrow{
+position:fixed;
+top:20px;
+right:20px;
 font-size:60px;
-margin:15px 0;
-animation: bounce 1s infinite;
+color:red;
+animation:blink 1s infinite, move 1s infinite alternate;
 }
 
-@keyframes bounce{
-0%{ transform: translateY(0); }
-50%{ transform: translateY(-12px); }
-100%{ transform: translateY(0); }
+/* miltillash */
+@keyframes blink{
+0%{opacity:1;}
+50%{opacity:0.3;}
+100%{opacity:1;}
 }
 
-.small{
-font-size:16px;
-opacity:0.8;
-margin-top:10px;
+/* kichik tebranish */
+@keyframes move{
+from{transform:translateY(0);}
+to{transform:translateY(10px);}
 }
+
+.box{
+background:white;
+color:black;
+padding:20px;
+border-radius:15px;
+font-weight:bold;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="box">
-
-<h1>⚠️ Telegram kanalga kirish uchun</h1>
-
 <div class="arrow">⬆️</div>
 
-<h1>Yuqoridagi 3 nuqtani bosing</h1>
-
-<div class="small">
+<div class="container">
+<div class="box">
+DIQQAT!<br><br>
+Telegram kanalga qo‘shilish uchun<br>
+Yuqoridagi 3 nuqtani bosing<br>
 So‘ng <b>"Open in browser"</b> ni tanlang
 </div>
-
 </div>
 
 </body>
