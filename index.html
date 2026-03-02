@@ -7,69 +7,59 @@
 <style>
 body{
 margin:0;
-background:#0f172a;
+height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
+background: linear-gradient(135deg, #229ED9, #0f172a);
+color:white;
 font-family:Arial;
 text-align:center;
-color:white;
 }
 
 .box{
 padding:30px;
-}
-
-/* Yozuv silkinish animatsiyasi */
-@keyframes shake {
-0% { transform: translateX(0); }
-25% { transform: translateX(-5px); }
-50% { transform: translateX(5px); }
-75% { transform: translateX(-5px); }
-100% { transform: translateX(0); }
+max-width:400px;
 }
 
 h1{
-font-size:26px;
-margin-bottom:30px;
-animation: shake 1.2s infinite;
-}
-
-/* Tugma pulsatsiya */
-@keyframes pulse {
-0% { transform: scale(1); box-shadow: 0 0 10px rgba(34,158,217,0.5); }
-50% { transform: scale(1.08); box-shadow: 0 0 30px rgba(34,158,217,0.9); }
-100% { transform: scale(1); box-shadow: 0 0 10px rgba(34,158,217,0.5); }
-}
-
-a{
-display:inline-block;
-padding:22px 45px;
 font-size:22px;
-background:#229ED9;
-color:white;
-text-decoration:none;
-border-radius:18px;
-animation: pulse 1.5s infinite;
-transition:0.3s;
+margin-bottom:15px;
 }
 
-a:active{
-transform:scale(0.95);
+.arrow{
+font-size:60px;
+margin:15px 0;
+animation: bounce 1s infinite;
+}
+
+@keyframes bounce{
+0%{ transform: translateY(0); }
+50%{ transform: translateY(-12px); }
+100%{ transform: translateY(0); }
+}
+
+.small{
+font-size:16px;
+opacity:0.8;
+margin-top:10px;
 }
 </style>
-
 </head>
 
 <body>
 
 <div class="box">
-<h1>Telegramga qo‘shilish uchun pastdagi tugmani bosing</h1>
 
-<a href="https://t.me/aka_uka_oyin1">
-🚀 TELEGRAMGA QO‘SHILISH
-</a>
+<h1>⚠️ Telegram kanalga kirish uchun</h1>
+
+<div class="arrow">⬆️</div>
+
+<h1>Yuqoridagi 3 nuqtani bosing</h1>
+
+<div class="small">
+So‘ng <b>"Open in browser"</b> ni tanlang
+</div>
 
 </div>
 
