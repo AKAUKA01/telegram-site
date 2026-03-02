@@ -18,14 +18,13 @@ text-align:center;
 flex-direction:column;
 }
 
-/* Qizil strelka */
 .arrow{
 position:fixed;
 top:20px;
 right:20px;
 font-size:80px;
 color:red;
-animation:blink 1s infinite, move 1s infinite alternate;
+animation:blink 1s infinite;
 }
 
 @keyframes blink{
@@ -34,12 +33,6 @@ animation:blink 1s infinite, move 1s infinite alternate;
 100%{opacity:1;}
 }
 
-@keyframes move{
-from{transform:translateY(0);}
-to{transform:translateY(8px);}
-}
-
-/* Asosiy blok */
 .box{
 background:white;
 color:black;
@@ -50,32 +43,8 @@ font-size:32px;
 line-height:1.5;
 max-width:90%;
 box-shadow:0 10px 25px rgba(0,0,0,0.3);
-margin-bottom:30px;
 }
-
-.red{
-color:red;
-}
-
-/* Telegram tugma */
-.btn{
-display:none; /* BOSHLANGANDA YASHIRIN */
-background:#229ED9;
-color:white;
-padding:18px 40px;
-font-size:26px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
-animation:btnpulse 1.2s infinite;
-}
-
-@keyframes btnpulse{
-0%{transform:scale(1);}
-50%{transform:scale(1.08);}
-100%{transform:scale(1);}
-}
+.red{color:red;}
 </style>
 </head>
 
@@ -89,17 +58,6 @@ Telegram каналига қўшилиш учун<br>
 Юқоридаги <span class="red">3 нуқтани</span> босинг<br><br>
 Сўнг <span class="red">«ОТКРЫТЬ В БРАУЗЕРЕ»</span> ни танланг
 </div>
-
-<a id="tgBtn" class="btn" href="https://t.me/aka_uka_oyin1">
-🚀 TELEGRAM КАНАЛГА ЎТИШ
-</a>
-
-<script>
-/* Agar sahifa TikTok ichida ochilmagan bo‘lsa (ya'ni Safari/Chrome bo‘lsa) */
-if (!navigator.userAgent.toLowerCase().includes("tiktok")) {
-    document.getElementById("tgBtn").style.display = "inline-block";
-}
-</script>
 
 </body>
 </html>
