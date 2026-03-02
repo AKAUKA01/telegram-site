@@ -2,46 +2,75 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Telegramga o'tish</title>
-
-<script>
-function openTelegram() {
-    window.location.href = "tg://resolve?domain=aka_uka_oyin1";
-    setTimeout(function(){
-        window.location.href = "https://t.me/aka_uka_oyin1";
-    }, 1000);
-}
-</script>
+<title>Telegram Kanal</title>
 
 <style>
 body{
-    margin:0;
-    background:#111;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    font-family:Arial;
-    color:white;
-    text-align:center;
+margin:0;
+background:#0f172a;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-family:Arial;
+text-align:center;
+color:white;
 }
-button{
-    padding:18px 35px;
-    font-size:20px;
-    border:none;
-    border-radius:12px;
-    background:#229ED9;
-    color:white;
+
+.box{
+padding:30px;
+}
+
+/* Yozuv silkinish animatsiyasi */
+@keyframes shake {
+0% { transform: translateX(0); }
+25% { transform: translateX(-5px); }
+50% { transform: translateX(5px); }
+75% { transform: translateX(-5px); }
+100% { transform: translateX(0); }
+}
+
+h1{
+font-size:26px;
+margin-bottom:30px;
+animation: shake 1.2s infinite;
+}
+
+/* Tugma pulsatsiya */
+@keyframes pulse {
+0% { transform: scale(1); box-shadow: 0 0 10px rgba(34,158,217,0.5); }
+50% { transform: scale(1.08); box-shadow: 0 0 30px rgba(34,158,217,0.9); }
+100% { transform: scale(1); box-shadow: 0 0 10px rgba(34,158,217,0.5); }
+}
+
+a{
+display:inline-block;
+padding:22px 45px;
+font-size:22px;
+background:#229ED9;
+color:white;
+text-decoration:none;
+border-radius:18px;
+animation: pulse 1.5s infinite;
+transition:0.3s;
+}
+
+a:active{
+transform:scale(0.95);
 }
 </style>
+
 </head>
 
-<body onload="openTelegram()">
+<body>
 
-<div>
-<h2>Telegram kanalga o'tish</h2>
-<br>
-<button onclick="openTelegram()">TELEGRAMGA KIRISH</button>
+<div class="box">
+<h1>Telegramga qo‘shilish uchun pastdagi tugmani bosing</h1>
+
+<a href="https://t.me/aka_uka_oyin1">
+🚀 TELEGRAMGA QO‘SHILISH
+</a>
+
 </div>
 
 </body>
