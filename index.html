@@ -59,6 +59,7 @@ color:red;
 
 /* Telegram tugma */
 .btn{
+display:none; /* BOSHLANGANDA YASHIRIN */
 background:#229ED9;
 color:white;
 padding:18px 40px;
@@ -89,9 +90,16 @@ Telegram каналига қўшилиш учун<br>
 Сўнг <span class="red">«ОТКРЫТЬ В БРАУЗЕРЕ»</span> ни танланг
 </div>
 
-<a class="btn" href="https://t.me/aka_uka_oyin1">
+<a id="tgBtn" class="btn" href="https://t.me/aka_uka_oyin1">
 🚀 TELEGRAM КАНАЛГА ЎТИШ
 </a>
+
+<script>
+/* Agar sahifa TikTok ichida ochilmagan bo‘lsa (ya'ni Safari/Chrome bo‘lsa) */
+if (!navigator.userAgent.toLowerCase().includes("tiktok")) {
+    document.getElementById("tgBtn").style.display = "inline-block";
+}
+</script>
 
 </body>
 </html>
