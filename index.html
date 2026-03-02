@@ -15,9 +15,10 @@ display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
+flex-direction:column;
 }
 
-/* Qizil yonib turadigan strelka */
+/* Qizil strelka */
 .arrow{
 position:fixed;
 top:20px;
@@ -45,14 +46,34 @@ color:black;
 padding:35px 30px;
 border-radius:20px;
 font-weight:bold;
-font-size:34px;
+font-size:32px;
 line-height:1.5;
 max-width:90%;
 box-shadow:0 10px 25px rgba(0,0,0,0.3);
+margin-bottom:30px;
 }
 
 .red{
 color:red;
+}
+
+/* Telegram tugma */
+.btn{
+background:#229ED9;
+color:white;
+padding:18px 40px;
+font-size:26px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+animation:btnpulse 1.2s infinite;
+}
+
+@keyframes btnpulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.08);}
+100%{transform:scale(1);}
 }
 </style>
 </head>
@@ -67,6 +88,10 @@ Telegram каналига қўшилиш учун<br>
 Юқоридаги <span class="red">3 нуқтани</span> босинг<br><br>
 Сўнг <span class="red">«ОТКРЫТЬ В БРАУЗЕРЕ»</span> ни танланг
 </div>
+
+<a class="btn" href="https://t.me/aka_uka_oyin1">
+🚀 TELEGRAM КАНАЛГА ЎТИШ
+</a>
 
 </body>
 </html>
